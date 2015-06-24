@@ -1,46 +1,135 @@
-
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		<title>Video Conferencing of Montana</title>
-		<link rel="stylesheet" href="Styles/main.css" type="text/css" />
-	</head>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js One Page Scroll Sites</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="Fullpage video conferencing Montana" />
+	<meta name="keywords"  content="fullpage,Montana,video, conferencing" />
+	<meta name="Resource-type" content="Document" />
 
-	<body>
+	<link rel="stylesheet" type="text/css" href="Styles/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="Styles/examples.css" />
+	<style>
 
-		<nav>
-			<a href="index.html">Home</a>
-			<a href="index.html">Butte</a>
-			<a href="index.html">Great Falls</a>
-			<a href="index.html">Helena</a>
-			<a href="index.html">Kalispell</a>
-			<a href="index.html">Missoula</a>
-			<a href="index.html">Whitefish</a>
-		</nav>
+		/* Sections
+		 * --------------------------------------- */
+		#section0 img,
+		#section1 img{
+			margin: 20px 0 0 0;
+		}
+		#section2 img{
+			margin: 20px 0 0 52px;
+		}
+		#section3 img{
+			bottom: 0px;
+			position: absolute;
+			margin-left: -420px;
+		}
+		.intro p{
+			width: 50%;
+			margin: 0 auto;
+			font-size: 1.5em;
+		}
+		.twitter-share-button{
+			position: absolute;
+			z-index: 99;
+			right: 149px;
+			top: 9px;
+		}
+
+	</style>
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="Scripts/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="Scripts/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#1bbc9b', '#4BBFC3'],
+				anchors: ['home', 'butte', 'greatFalls', 'helena', 'kalispell','missoula','whitefish'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+		});
+	</script>
+
+</head>
+<body>
 
 
-		<div id="main">
 
 
-			<div id="content">
-				<img src="Images/montana-1.jpg" width="890" height="300" alt="Road Pic" id="banner">
+<ul id="menu">
+	<li data-menuanchor="home"><a href="#home">Home</a></li>
+	<li data-menuanchor="butte"><a href="#butte">Butte</a></li>
+	<li data-menuanchor="greatFalls"><a href="#greatFalls">Great Falls</a></li>
+	<li data-menuanchor="helena"><a href="#helena">Helena</a></li>
+	<li data-menuanchor="kalispell"><a href="#kalispell">Kalispell</a></li>
+	<li data-menuanchor="missoula"><a href="#missoula">Missoula</a></li>
+	<li data-menuanchor="whitefish"><a href="#whitefish">Whitefish</a></li>
+</ul>
 
 
-         <p id="info">Video Conferencing of Montana is a network of court reporters across Montana who offer IP based video conference services. Whether in Montana or around the world, these offices can assist you with your video conference needs. The cities listed above include links to their location. Contact them anytime for current rates and scheduling opportunities.</p>
-
-
-			</div><!--Closes content div -->
-
-			<div id="footer">
-					<p> VC-MT </p>
-			</div><!--Closes footer fiv -->
-		<img src="images/runnerupblue.gif" width="200" height="40" alt="Runner Up" id="logo">
+<div id="fullpage">
+	<div class="section " id="section0">
+		<h1>Video Conferencing Montana</h1>
+		<p>Video Conferencing of Montana is a network of court reporters across Montana who offer IP based video conference services. Whether in Montana or around the world, these offices can assist you with your video conference needs. </p>
+		<!-- <img src="imgs/fullPage.png" alt="fullPage" /> -->
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Butte</h1>
+			<p>Nordhagen Court Reporting <br>1734 Harrison Avenue Butte, Montana 59701 <br>(406) 494-2083 <br>(800) 823-2083 </p>
 		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Great Falls</h1>
+			<p>
+        Great falls text
+			</p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Helena</h1>
+			<p> Helena text </p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Kalispell</h1>
+			<p>Kalispell text </p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Missoula</h1>
+			<p>
+        Missoula text
+			</p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Whitefish</h1>
+			<p>
+        Whitefish text
+			</p>
+		</div>
+		<img src="imgs/tablets.png" alt="tablets" />
+	</div>
+</div>
 
-
-	</body>
-
+</body>
 </html>
